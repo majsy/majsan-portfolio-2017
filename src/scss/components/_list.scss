@@ -1,0 +1,36 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .list-item {
+    align-items: flex-start;
+  }
+
+  &.projects {
+    .list-item {
+      padding: 10px 0 20px;
+      cursor: pointer;
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      .heading-03 {
+        text-transform: uppercase;
+      }
+
+      .heading-01 {
+        color: $c-pink-bright;
+        padding-top: 10px;
+        transition: color 500ms ease-out;
+
+        &:hover {
+          color: $c-pink-dark;
+        }
+      }
+    }
+  }
+}

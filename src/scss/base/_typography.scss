@@ -1,0 +1,58 @@
+.heading-01,
+.heading-02,
+.heading-03 {
+  font-family: 'Roboto', sans-serif;
+  color: $c-pink-dark;
+  margin: 0;
+}
+
+.heading-01 {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.heading-02 {
+  font-size: 26px;
+}
+
+.heading-03 {
+  font-size: 16px;
+}
+
+.copy-01 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0;
+  color: $c-grey-dark;
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: $c-pink-dark;
+  font-weight: 600;
+  transition: color 500ms ease-out;
+
+  &:hover {
+    color: $c-pink-bright;
+  }
+}
+
+@include breakpoint(md) {
+  .heading-01 {
+    font-size: 38px;
+  }
+
+  .heading-02 {
+    font-size: 30px;
+  }
+
+  .copy-01 {
+    font-size: 17px;
+  }
+}
+
+
+

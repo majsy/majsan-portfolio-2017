@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  //justify-content: center;
+  list-style: none;
+  padding: 0;
+
+  .nav-item {
+    align-items: flex-start;
+    padding: 0 12px;
+    //text-transform: uppercase;
+  }
+}

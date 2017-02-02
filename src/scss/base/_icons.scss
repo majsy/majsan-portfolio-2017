@@ -1,0 +1,30 @@
+.close {
+  position: absolute;
+  right: 28px;
+  top: 20px;
+  @include size(23px);
+  opacity: 1;
+  transition: opacity 300ms ease-out;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    left: 9px;
+    content: ' ';
+    height: 25px;
+    width: 5px;
+    background-color: $c-grey-dark;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}

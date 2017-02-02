@@ -1,0 +1,12 @@
+@mixin keyframe ($animation_name) {
+  @keyframes #{$animation_name} {
+    @content;
+  }
+}
+
+@mixin animation ($animation, $duration, $delay: 0s, $fillMode: forwards) {
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $animation;
+  animation-fill-mode: $fillMode; /* this prevents the animation from restarting! */
+}

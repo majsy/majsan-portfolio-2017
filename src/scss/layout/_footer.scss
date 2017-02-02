@@ -1,0 +1,9 @@
+.footer {
+  @include size(100%, 100px);
+  background-color: $c-yellow-dark;
+  z-index: 2;
+
+  @include breakpoint(sm) {
+    height: 150px;
+  }
+}

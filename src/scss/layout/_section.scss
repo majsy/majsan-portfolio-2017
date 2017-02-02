@@ -1,0 +1,138 @@
+@include keyframe(title-top-down) {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  1% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.section {
+  //background-color: #FFDDE2;
+  height: auto;
+  padding: 20px 20px;
+  overflow: hidden;
+
+  .heading-02 {
+    padding-bottom: 20px;
+  }
+
+  &.home {
+    height: 100vh;
+    background-color: rgba(255, 219, 225, 1);
+    padding: 0 20px;
+
+    .image-container {
+      img {
+        @include size(100%, auto);
+      }
+    }
+
+    .heading-01 {
+      font-size: 38px;
+      margin: 20px 0;
+      @include animation(title-top-down, 1s, .5s, backwards);
+    }
+  }
+
+  &.about {
+    .copy-01 {
+      span {
+        font-weight: 600;
+        color: $c-pink-dark;
+
+        &.intro {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  &.projects {
+    padding: 20px 20px 50px;
+    //overflow: hidden
+  }
+
+  @include breakpoint(sm) {
+    display: flex;
+    padding: 40px 30px;
+
+    &.experience {
+      .heading-02 {
+        span {
+          display: block;
+        }
+      }
+    }
+    
+    &.projects {
+      padding: 40px 30px 70px;
+    }
+
+    .heading-02 {
+      padding-bottom: 0;
+    }
+
+    .col-left,
+    .col-right {
+      width: 50%;
+      display: inline-block;
+    }
+
+    &.about {
+      padding-top: 60px;
+    }
+
+    &.home {
+      padding: 0;
+
+      .container {
+        margin: 0 auto;
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .image-container {
+        max-width: 500px;
+      }
+
+      .heading-01 {
+        font-size: 8.7vw;
+        position: absolute;
+        margin: 0;
+        top: -6vw;
+      }
+    }
+  }
+
+  @include breakpoint(md) {
+    max-width: 940px;
+    margin: 0 auto;
+
+    &.home {
+      max-width: 100%;
+    }
+  }
+
+  @include breakpoint(xl) {
+    max-width: 1040px;
+
+    .image-container {
+      max-width: 600px;
+
+      .heading-01 {
+        font-size: 110px;
+        //top: 76px;
+      }
+    }
+  }
+}
