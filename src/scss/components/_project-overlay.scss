@@ -35,6 +35,10 @@
         text-transform: uppercase;
         padding: 5px 0 15px;
         font-size: 20px;
+
+        span {
+          display: block;
+        }
       }
 
       .project-link {
@@ -56,10 +60,15 @@
     .image-container {
       @include size(100%, auto);
 
-      img {
+      img,
+      iframe {
         width: 100%;
         height: auto;
         margin: 0 0 20px;
+      }
+
+      iframe {
+        height: 300px;
       }
     }
   }
@@ -71,6 +80,12 @@
       .project-content {
         &.is-visible {
           display: flex
+        }
+
+        .project-role {
+          span {
+            display: inline-block;
+          }
         }
       }
     }

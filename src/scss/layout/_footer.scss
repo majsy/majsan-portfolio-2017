@@ -3,7 +3,18 @@
   background-color: $c-yellow-dark;
   z-index: 2;
 
+  .heading-01 {
+    color: #fff;
+    font-size: 26px;
+    padding: 20px;
+  }
+
   @include breakpoint(sm) {
     height: 150px;
+
+    .heading-01 {
+      font-size: 36px;
+      padding: 20px 30px;
+    }
   }
 }

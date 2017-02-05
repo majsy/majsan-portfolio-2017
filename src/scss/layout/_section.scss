@@ -14,9 +14,8 @@
 }
 
 .section {
-  //background-color: #FFDDE2;
   height: auto;
-  padding: 20px 20px;
+  padding: 20px 20px 0;
   overflow: hidden;
 
   .heading-02 {
@@ -28,6 +27,11 @@
     background-color: rgba(255, 219, 225, 1);
     padding: 0 20px;
 
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
     .image-container {
       img {
         @include size(100%, auto);
@@ -35,13 +39,26 @@
     }
 
     .heading-01 {
-      font-size: 38px;
-      margin: 20px 0;
+      font-size: 44px;
+      text-align: center;
+      margin: 30px 0;
       @include animation(title-top-down, 1s, .5s, backwards);
+    }
+
+    .heading-03 {
+      font-size: 22px;
+      padding: 30px 0;
+      @include animation(title-top-down, 1s, 1.2s, backwards);
+
+      span {
+        display: block;
+      }
     }
   }
 
   &.about {
+    padding: 40px 20px 0;
+
     .copy-01 {
       span {
         font-weight: 600;
@@ -55,25 +72,12 @@
   }
 
   &.projects {
-    padding: 20px 20px 50px;
-    //overflow: hidden
+    padding: 20px 20px 30px;
   }
 
   @include breakpoint(sm) {
     display: flex;
     padding: 40px 30px;
-
-    &.experience {
-      .heading-02 {
-        span {
-          display: block;
-        }
-      }
-    }
-    
-    &.projects {
-      padding: 40px 30px 70px;
-    }
 
     .heading-02 {
       padding-bottom: 0;
@@ -85,16 +89,11 @@
       display: inline-block;
     }
 
-    &.about {
-      padding-top: 60px;
-    }
-
     &.home {
       padding: 0;
 
       .container {
-        margin: 0 auto;
-        width: 50%;
+        max-width: initial;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -108,9 +107,35 @@
       .heading-01 {
         font-size: 8.7vw;
         position: absolute;
+        text-align: initial;
         margin: 0;
         top: -6vw;
+        left: 15px;
       }
+
+      .heading-03 {
+        font-size: 22px;
+        position: absolute;
+        right: -120px;
+        bottom: 15px;
+        padding: 0;
+      }
+    }
+
+    &.about {
+      padding-top: 60px;
+    }
+
+    &.experience {
+      .heading-02 {
+        span {
+          display: block;
+        }
+      }
+    }
+
+    &.projects {
+      padding: 40px 30px 50px;
     }
   }
 
