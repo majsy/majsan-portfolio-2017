@@ -28,3 +28,18 @@
     transform: rotate(-45deg);
   }
 }
+
+.fa {
+  font-size: 20px !important;
+  color: #fff;
+
+  &.fa-chevron-down {
+    color: $c-pink-dark;
+  }
+
+  @include breakpoint(sm) {
+    font-size: 24px !important;
+  }
+}
+
+

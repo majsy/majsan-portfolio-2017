@@ -4,6 +4,7 @@
   font-family: 'Roboto', sans-serif;
   color: $c-pink-dark;
   margin: 0;
+  font-weight: 600;
 }
 
 .heading-01 {
@@ -29,11 +30,13 @@
   padding-bottom: 10px;
 }
 
-a {
+a,
+.link-01 {
   text-decoration: none;
   color: $c-pink-dark;
   font-weight: 600;
   transition: color 500ms ease-out;
+  cursor: pointer;
 
   &:hover {
     color: $c-pink-bright;

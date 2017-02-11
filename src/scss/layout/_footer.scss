@@ -1,20 +1,64 @@
 .footer {
-  @include size(100%, 100px);
+  @include size(100%, auto);
   background-color: $c-yellow-dark;
   z-index: 2;
+  min-height: 120px;
 
   .heading-01 {
-    color: #fff;
     font-size: 26px;
-    padding: 20px;
+
+    .link-01 {
+      color: #fff;
+    }
+  }
+
+  .list-container {
+    padding: 10px 0 0;
+
+    .list {
+      .list-item {
+        padding: 0 20px 0 0;
+      }
+    }
+  }
+
+  .copy-01 {
+    color: #fff;
+    text-align: right;
+    font-size: 13px;
+    padding-bottom: 0;
   }
 
   @include breakpoint(sm) {
-    height: 150px;
+    min-height: 160px;
+
+    .container {
+      padding: 30px 30px 20px;
+    }
+
+    .section {
+      display: block;
+    }
 
     .heading-01 {
       font-size: 36px;
-      padding: 20px 30px;
+    }
+
+    .link-01 {
+      display: inline-block;
+    }
+
+      .list .list-item,
+      .link-01 {
+        transition: transform 500ms $ease-expo-out;
+
+        &:hover {
+          transform: scale(0.95);
+        }
+      }
+
+    .copy-01 {
+      font-size: 15px;
     }
   }
 }

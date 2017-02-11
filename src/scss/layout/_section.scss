@@ -47,12 +47,19 @@
 
     .heading-03 {
       font-size: 22px;
-      padding: 30px 0;
+      padding: 20px 0;
       @include animation(title-top-down, 1s, 1.2s, backwards);
 
       span {
-        display: block;
+        font-weight: 300;
       }
+    }
+
+    .fa-chevron-down {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
@@ -114,11 +121,12 @@
       }
 
       .heading-03 {
-        font-size: 22px;
-        position: absolute;
-        right: -120px;
-        bottom: 15px;
-        padding: 0;
+        padding: 5px 0;
+        text-align: right;
+
+        span {
+          display: inline-block;
+        }
       }
     }
 
@@ -156,7 +164,6 @@
 
       .heading-01 {
         font-size: 110px;
-        //top: 76px;
       }
     }
   }
