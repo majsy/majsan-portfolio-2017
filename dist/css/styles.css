@@ -4,11 +4,11 @@
   font-family: 'Roboto', sans-serif;
   color: #E55982;
   margin: 0;
-  font-weight: 600;
-  letter-spacing: .5px; }
+  font-weight: 600; }
 
 .heading-01 {
-  font-size: 30px; }
+  font-size: 30px;
+  letter-spacing: -1px; }
 
 .heading-02 {
   font-size: 26px; }
