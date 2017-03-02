@@ -1,3 +1,5 @@
-import { ProjectOverlay } from './projectOverlay';
+'use strict';
 
-new ProjectOverlay();
+var _projectOverlay = require('./projectOverlay');
+
+new _projectOverlay.ProjectOverlay();
