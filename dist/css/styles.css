@@ -42,6 +42,9 @@ a,
     letter-spacing: .8px; }
   .heading-02 {
     font-size: 30px; }
+  .heading-02,
+  .heading-03 {
+    letter-spacing: .5px; }
   .copy-01 {
     font-size: 17px; } }
 
@@ -240,6 +243,8 @@ a,
   list-style: none;
   padding: 0;
   margin: 0; }
+  .list.awards {
+    display: block; }
   .list .list-item {
     align-items: flex-start; }
   .list.projects .list-item {

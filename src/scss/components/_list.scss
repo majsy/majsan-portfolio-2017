@@ -4,6 +4,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  
+  &.awards {
+    display: block;
+  }
 
   .list-item {
     align-items: flex-start;
