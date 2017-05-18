@@ -1,6 +1,14 @@
+import scroll from 'scroll';
+
 export class PageScroll {
     constructor() {
-        this.homePage = document.querySelector('.section.home');
-        this.homePage.style.setProperty('height', this.homePage.clientHeight);
+        this.aboutContainer = document.querySelector('.section.about');
+        this.scrollChevron = document.querySelector('.fa-chevron-down');
+
+        this.scrollChevron.addEventListener('click', (event) => this.scrollToAbout(event));
+    }
+ 
+    scrollToAbout() {
+        scroll.top(document.body, this.aboutContainer.offsetTop);
     }
 }

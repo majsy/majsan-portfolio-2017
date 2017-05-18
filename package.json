@@ -17,5 +17,8 @@
     "gulp-sass": "^2.3.2",
     "gulp-util": "^3.0.8",
     "webpack": "^1.14.0"
+  },
+  "dependencies": {
+    "scroll": "^2.0.0"
   }
 }

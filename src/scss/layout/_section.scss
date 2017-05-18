@@ -60,6 +60,11 @@
       bottom: 20px;
       left: 50%;
       transform: translateX(-50%);
+      transition: transform 700ms $ease-expo-out;
+
+      &:hover {
+        transform: translateY(15%) translate(-50%);
+      }
     }
   }
 

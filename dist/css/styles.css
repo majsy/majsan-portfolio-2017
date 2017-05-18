@@ -72,7 +72,8 @@ a,
 
 .fa {
   font-size: 20px !important;
-  color: #fff; }
+  color: #fff;
+  cursor: pointer; }
   .fa.fa-chevron-down {
     color: #E55982; }
   @media (min-width: 768px) {
@@ -127,7 +128,10 @@ a,
       position: absolute;
       bottom: 20px;
       left: 50%;
-      transform: translateX(-50%); }
+      transform: translateX(-50%);
+      transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1); }
+      .section.home .fa-chevron-down:hover {
+        transform: translateY(15%) translate(-50%); }
   .section.about {
     padding: 40px 20px 0; }
     .section.about .copy-01 span {

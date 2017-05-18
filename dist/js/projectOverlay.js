@@ -46,7 +46,7 @@ var ProjectOverlay = exports.ProjectOverlay = function () {
 
             // animate project container up
             this.projectOverlay.style.setProperty('transform', 'translateY(0%)');
-            // TODO change to using a class
+
             this.projectContainer.classList.add('project-overlay-visible');
 
             // set height of container to height of project

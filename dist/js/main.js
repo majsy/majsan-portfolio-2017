@@ -2,7 +2,18 @@
 
 var _projectOverlay = require('./projectOverlay');
 
+var _pageScroll = require('./pageScroll');
+
+var _pageHeight = require('./pageHeight');
+
 new _projectOverlay.ProjectOverlay();
 
-// import { PageScroll } from './pageScroll';
-// new PageScroll();
+new _pageScroll.PageScroll();
+
+var pageHeight = new _pageHeight.PageHeight();
+
+pageHeight.setHomePageHeight();
+
+window.addEventListener('resize', function () {
+    pageHeight.setHomePageHeight();
+});
